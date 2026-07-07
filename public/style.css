@@ -1,0 +1,385 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    color:#222;
+}
+
+/* ===========================
+   LOGIN PAGE
+=========================== */
+
+.login-page{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+    background:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.55);
+
+}
+
+.login-card{
+
+    position:relative;
+
+    z-index:5;
+
+    width:420px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    color:white;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.login-card h1{
+
+    font-size:42px;
+
+    font-weight:700;
+
+}
+
+.login-card p{
+
+    margin-top:8px;
+
+    margin-bottom:30px;
+
+    color:#f3f3f3;
+
+}
+
+.login-card input{
+
+    margin-top:15px;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    border:none;
+
+}
+
+.login-card button{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    font-size:17px;
+
+}
+
+.login-card button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+#msg{
+
+    margin-top:15px;
+
+    color:#ffb3b3;
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    padding:14px 0;
+
+}
+
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    background:linear-gradient(135deg,#4f46e5,#2563eb);
+
+    color:white;
+
+    padding:90px 20px;
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:52px;
+
+    font-weight:700;
+
+}
+
+.hero p{
+
+    margin-top:20px;
+
+    font-size:20px;
+
+}
+
+.hero .btn{
+
+    margin-top:25px;
+
+    padding:14px 35px;
+
+    border-radius:40px;
+
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.card{
+
+    border:none;
+
+    border-radius:18px;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+/* ===========================
+   BOOK CARDS
+=========================== */
+
+.book-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.book-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.book-card img{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+    border-top-left-radius:18px;
+
+    border-top-right-radius:18px;
+
+
+}
+
+.book-content{
+
+    padding:18px;
+
+}
+
+.book-title{
+
+    font-size:22px;
+
+    font-weight:600;
+
+}
+
+.author{
+
+    color:#666;
+
+    margin-bottom:8px;
+
+}
+
+.rating{
+
+    color:#ffc107;
+
+    font-size:18px;
+
+}
+
+.price{
+
+    color:#16a34a;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin:12px 0;
+
+}
+
+.buy-btn{
+
+    width:100%;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:12px;
+
+    border-radius:8px;
+
+}
+
+.buy-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.delete-btn{
+
+    width:100%;
+
+    margin-top:10px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    margin-top:80px;
+
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+footer p{
+
+    color:#ccc;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.login-card{
+
+width:90%;
+
+padding:30px;
+
+}
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+}
